@@ -1,0 +1,99 @@
+<!DOCTYPE>
+<html lang="en">
+  <head>
+    <title>Font converter, C गाँधी / चाणक्य / कृतिदेव – शब्द क्षेत्र (4CGandhi / Chanakya / Kruti Dev – Text Area), यूनीकोड शब्द क्षेत्र (Unicode Text Area)</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="title" content="Font Converter">
+    <meta name="description" content="Font converter, C गाँधी / चाणक्य / कृतिदेव – शब्द क्षेत्र (4CGandhi / Chanakya / Kruti Dev – Text Area), यूनीकोड शब्द क्षेत्र (Unicode Text Area)">
+    <meta name="keywords" content="4c Gandhi to Unicode, Chanakya to Unicode, Kruti Dev to Unicode, Unicode to 4C Gandhi, Unicode to Chanakya, Unicode to Kruti Dev">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="koffeewithkode.com">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-theme.min.css">
+  </head>
+  <body class="bg-info">
+    <div class="container">
+      <div class="header clearfix">
+        <h3 class="text-center"><img src="images/logo.png"  alt="Logo"></h3>
+      </div> 
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+              <span class="text-bold">4C&nbsp;गाँधी&nbsp;/&nbsp;चाणक्य&nbsp;/&nbsp;कृतिदेव&nbsp;&#8211;&nbsp;शब्द&nbsp;क्षेत्र (4CGandhi / Chanakya / Kruti Dev &#8211; Text Area)</span class="text-bold">
+                <div class="form-group margin-top10">
+                  <textarea id="legacy_text" class="form-control" cols="90" name="TextToConvert" rows="8"></textarea>
+                </div>
+                <div class="pull-left">
+                    <div class="text-center">
+                        <button href="javascript:void(0);" id="g2u" name="converter" class="btn btn-default">4c Gandhi to Unicode <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></button>
+                        <button href="javascript:void(0);" id="c2u" name="converter" class="btn btn-default">Chanakya to Unicode  <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></button>
+                        <button href="javascript:void(0);" id="k2u" name="converter" class="btn btn-default">Kruti Dev to Unicode  <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></button>
+                    </div>
+                </div> 
+          </div>
+          <div class="col-xs-12 col-md-6">
+              <b>यूनीकोड&nbsp;शब्द&nbsp;क्षेत्र (Unicode Text Area)</b>
+               
+              <div class="form-group margin-top10">
+                <textarea id="unicode_text" class="form-control"  cols="90" name="ConvertedText" rows="8"></textarea>
+              </div>
+              <div class="pull-left">
+                <div class="text-center">
+                    <button href="javascript:void(0);" id="u2g" name="converter" class="btn btn-default"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Unicode to 4C Gandhi</button>
+                    <button href="javascript:void(0);" id="u2c" name="converter" class="btn btn-default"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Unicode to Chanakya</button>
+                    <button href="javascript:void(0);" id="u2k" name="converter" class="btn btn-default"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span> Unicode to Kruti Dev</button>
+                </div>
+              </div> 
+          </div>
+      </div>
+    </div>
+     <section class="footer-wrap margin-top20">
+        <div class="powerd-by text-center">Powered by <a rel="noopener noreferrer" href="http://www.koffeewithkode.com/" target="_blank">Koffeewithkode.com</a></div>
+    </section>   
+  </body>
+   
+</html>
+<script type="text/javascript" src="js/kd.js"></script>
+<script type="text/javascript" src="js/ch.js"></script>
+<script type="text/javascript" src="js/gndhi.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    $('#g2u').click(function(){
+      convert_gandhi_to_unicode();
+      return;
+    })
+
+    $('#c2u').click(function(){
+      convert_chanakya_to_unicode();
+      return;
+    })
+
+    $('#k2u').click(function(){
+      convert_kruti_to_unicode();
+      return;
+    })
+
+
+    $('#u2g').click(function(){
+      Convert_to_4CGandhi();
+      return;
+    })
+
+    $('#u2c').click(function(){
+      Convert_Unicode_to_Chanakya();
+      return;
+    })
+
+    $('#u2k').click(function(){
+      Convert_to_Kritidev_010();
+      return;
+    })
+  });
+</script>
